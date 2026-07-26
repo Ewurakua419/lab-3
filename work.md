@@ -43,3 +43,20 @@ loss= \frac{(\hat{y}-y)^2}{n}
 
 \frac{\partial loss}{\partial \hat{y}} =2((\hat{y}-y))
 $$
+
+$$
+\hat{y}=wx+b
+\\
+\frac{\partial \hat{y}}{\partial w}= x
+$$
+
+$$
+\frac{\partial loss}{\partial w}=2((\hat{y}-y)) \cdot x
+
+$$
+for an arbitrary value of n
+
+for all values of n it would be 
+$$
+\frac{\partial loss}{\partial w}= \frac{1}{n} \cdot \sum^n_{i=0} 2((\hat{y}-y)) \cdot x
+$$
